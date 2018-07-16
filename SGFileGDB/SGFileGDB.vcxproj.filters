@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="產生的檔案">
+      <UniqueIdentifier>{56af021d-cc39-4c2d-a761-33a4b3d77891}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="SGFileGDB.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="xdlldata.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="SGFileGDB_i.c">
+      <Filter>產生的檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="GDBWorkspace.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="GDBFeatureClass.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Extension.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GeoDataset.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PersistXMLImpl.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TProcess.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WKB.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XML.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="NameCollection.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="GDBGeometry.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="xdlldata.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SGFileGDB_i.h">
+      <Filter>產生的檔案</Filter>
+    </ClInclude>
+    <ClInclude Include="GDBWorkspace.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="GDBFeatureClass.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extension.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GDBError.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\geodataset.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\InterfaceImpl.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PersistXMLImpl.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TProcess.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WKB.H">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WKS.H">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XML.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="NameCollection.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EncodingConv.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="GDBGeometry.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SGFileGDB.rc">
+      <Filter>資源檔</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SGFileGDB.rgs">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="SGFileGDB.def">
+      <Filter>原始程式檔</Filter>
+    </None>
+    <None Include="GDBWorkspace.rgs">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="GDBFeatureClass.rgs">
+      <Filter>資源檔</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="SGFileGDB.idl">
+      <Filter>原始程式檔</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\FileGDB\FileGDBAPI.lib" />
+    <Library Include="..\FileGDB\FileGDBAPIx64.lib" />
+    <Library Include="..\FileGDB\FileGDBAPID.lib" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,52 @@
+// SGFileGDB.idl : SGFileGDB 的 IDL 來源
+//
+
+// 這個檔案會由 MIDL 工具處理
+// 以產生類型程式庫 (SGFileGDB.tlb) 和封送處理程式碼。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(92FEBB53-40C9-4E59-A0B0-6E2CC076DB5C),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IGDBWorkspace : IDispatch{
+	[helpstring("method Open")] HRESULT Open([in] BSTR FilePath, [out, retval] VARIANT_BOOL *Result);
+	[helpstring("method Create")] HRESULT Create([in] BSTR FilePath, [out, retval] VARIANT_BOOL *Result);
+};
+[
+	object,
+	uuid(91177865-8A0F-4EB1-8819-376F2CC06B7A),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IGDBFeatureClass : IDispatch{
+};
+[
+	uuid(1E3C210F-F5C8-43DA-8852-58624349BF8A),
+	version(1.0),
+]
+library SGFileGDB
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(991921D7-4F7E-4285-9B7B-A25F8B6B8061)		
+	]
+	coclass GDBWorkspace
+	{
+		[default] interface IGDBWorkspace;
+	};
+	[
+		uuid(B2BF00F4-8FBF-46BE-9E59-6DFE14485D75)		
+	]
+	coclass GDBFeatureClass
+	{
+		[default] interface IGDBFeatureClass;
+	};
+};
+

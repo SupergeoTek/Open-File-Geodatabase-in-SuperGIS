@@ -1,0 +1,26 @@
+HKCR
+{
+	SGFileGDB.GDBFeatureClass.1 = s 'GDBFeatureClass Class'
+	{
+		CLSID = s '{B2BF00F4-8FBF-46BE-9E59-6DFE14485D75}'
+	}
+	SGFileGDB.GDBFeatureClass = s 'GDBFeatureClass Class'
+	{		
+		CurVer = s 'SGFileGDB.GDBFeatureClass.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B2BF00F4-8FBF-46BE-9E59-6DFE14485D75} = s 'GDBFeatureClass Class'
+		{
+			ProgID = s 'SGFileGDB.GDBFeatureClass.1'
+			VersionIndependentProgID = s 'SGFileGDB.GDBFeatureClass'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{1E3C210F-F5C8-43DA-8852-58624349BF8A}'
+			Version = s '1.0'
+		}
+	}
+}

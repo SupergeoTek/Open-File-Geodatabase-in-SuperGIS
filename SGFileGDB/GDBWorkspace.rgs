@@ -1,0 +1,26 @@
+HKCR
+{
+	SGFileGDB.GDBWorksapce.1 = s 'GDBWorkspace Class'
+	{
+		CLSID = s '{991921D7-4F7E-4285-9B7B-A25F8B6B8061}'
+	}
+	SGFileGDB.GDBWorksapce = s 'GDBWorkspace Class'
+	{		
+		CurVer = s 'SGFileGDB.GDBWorksapce.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {991921D7-4F7E-4285-9B7B-A25F8B6B8061} = s 'GDBWorkspace Class'
+		{
+			ProgID = s 'SGFileGDB.GDBWorksapce.1'
+			VersionIndependentProgID = s 'SGFileGDB.GDBWorksapce'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{1E3C210F-F5C8-43DA-8852-58624349BF8A}'
+			Version = s '1.0'
+		}
+	}
+}
